@@ -1,6 +1,19 @@
 # Postfix
 
-This repository contains docker for postfix.
+This repository is a docker image for [postfix](http://www.postfix.org/).
+
+## Build and Run
+
+Start the server:
+```
+docker build . -t postfix
+docker run --rm --name pf postfix
+```
+
+Start a shell inside the container:
+```
+docker exec -it pf bash
+```
 
 ## Environment Variable
 ### POSTFIX_CONFIG_MAIN_CF
