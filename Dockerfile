@@ -17,4 +17,4 @@ ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 EXPOSE 25 465 587
 
-#CMD ["/usr/sbin/postfix start-fg"]
+COPY docker/ /
