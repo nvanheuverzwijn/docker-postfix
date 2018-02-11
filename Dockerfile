@@ -15,6 +15,6 @@ ADD https://github.com/kronostechnologies/docker-init-entrypoint/releases/downlo
 RUN chmod +x /usr/local/bin/entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
-COPY docker/ /
+EXPOSE 25 465 587
 
 #CMD ["/usr/sbin/postfix start-fg"]
