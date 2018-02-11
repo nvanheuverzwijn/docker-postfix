@@ -6,6 +6,7 @@ ENV ENTRYPOINT_ROOT="entrypoint" \
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
       busybox-syslogd \
+      ca-certificates \
       postfix \
       procps \
     && rm -rf /var/lib/apt/lists/*
