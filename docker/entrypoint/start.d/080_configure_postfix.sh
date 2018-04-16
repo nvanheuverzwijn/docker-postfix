@@ -12,7 +12,7 @@ fi
 
 if [[ -n "$POSTFIX_VIRTUAL_MAILBOX_DOMAINS_CF" ]]; then
   echo "Using environment variable 'POSTFIX_VIRTUAL_MAILBOX_DOMAINS_CF' as content for '/etc/postfix/virtual_mailbox_domains.cf'"
-  echo -n "$POSFIX_VIRTUAL_MAILBOX_DOMAINS_CF" > /etc/postfix/virtual_mailbox_domains.cf
+  echo -n "$POSTFIX_VIRTUAL_MAILBOX_DOMAINS_CF" > /etc/postfix/virtual_mailbox_domains.cf
 fi
 
 if [[ -n "$POSTFIX_VIRTUAL_MAILBOX_MAPS_CF" ]]; then
