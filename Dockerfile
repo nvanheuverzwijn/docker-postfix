@@ -2,7 +2,8 @@ FROM debian:stretch-slim
 
 ENV ENTRYPOINT_ROOT="entrypoint" \
     POSTFIX_CONFIG_MAIN_CF="" \
-    POSTFIX_CONFIG_MASTER_CF=""
+    POSTFIX_CONFIG_MASTER_CF="" \
+    VIRTUAL_MAILBOX_DOMAINS_CF=""
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
