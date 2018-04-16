@@ -24,6 +24,8 @@ The content of this variable will overwrite everything in `/etc/postfix/master.c
 The content of this variable will overwrite everything in `/etc/postfix/virtual_mailbox_domains.cf`
 ### POSTFIX_VIRTUAL_MAILBOX_MAPS_CF
 The content of this variable will overwrite everything in `/etc/postfix/virtual_mailbox_maps.cf`
+### POSTFIX_VIRTUAL_ALIAS_MAPS_CF
+The content of this variable will overwrite everything in `/etc/postfix/virtual_alias_maps.cf`
 
 ## Example
 ### Docker Compose

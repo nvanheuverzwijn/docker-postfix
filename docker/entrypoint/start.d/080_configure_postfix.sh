@@ -19,3 +19,8 @@ if [[ -n "$POSTFIX_VIRTUAL_MAILBOX_MAPS_CF" ]]; then
   echo "Using environment variable 'POSTFIX_VIRTUAL_MAILBOX_MAPS_CF' as content for '/etc/postfix/virtual_mailbox_maps.cf'"
   echo -n "$POSTFIX_VIRTUAL_MAILBOX_MAPS_CF" > /etc/postfix/virtual_mailbox_maps.cf
 fi
+
+if [[ -n "$POSTFIX_VIRTUAL_ALIAS_MAPS_CF" ]]; then
+  echo "Using environment variable 'POSTFIX_VIRTUAL_ALIAS_MAPS_CF' as content for '/etc/postfix/virtual_alias_maps.cf'"
+  echo -n "$POSTFIX_VIRTUAL_ALIAS_MAPS_CF" > /etc/postfix/virtual_alias_maps.cf
+fi
