@@ -18,12 +18,12 @@ docker exec -it pf bash
 ## Environment Variable
 ### POSTFIX_CONFIG_MAIN_CF
 The content of this variable will overwrite everything in `/etc/postfix/main.cf`.
-
 ### POSTFIX_CONFIG_MASTER_CF
 The content of this variable will overwrite everything in `/etc/postfix/master.cf`.
-
-### VIRTUAL_MAILBOX_DOMAINS_CF
+### POSTFIX_VIRTUAL_MAILBOX_DOMAINS_CF
 The content of this variable will overwrite everything in `/etc/postfix/virtual_mailbox_domains.cf`
+### POSTFIX_VIRTUAL_MAILBOX_MAPS_CF
+The content of this variable will overwrite everything in `/etc/postfix/virtual_mailbox_maps.cf`
 
 ## Example
 ### Docker Compose

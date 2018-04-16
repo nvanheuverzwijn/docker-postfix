@@ -10,7 +10,12 @@ if [[ -n "$POSTFIX_CONFIG_MASTER_CF" ]]; then
   echo -n "$POSTFIX_CONFIG_MASTER_CF" > /etc/postfix/master.cf
 fi
 
-if [[ -n "$VIRTUAL_MAILBOX_DOMAINS_CF" ]]; then
-  echo "Using environment variable 'VIRTUAL_MAILBOX_DOMAINS_CF' as content for '/etc/postfix/virtual_mailbox_domains.cf'"
-  echo -n "$VIRTUAL_MAILBOX_DOMAINS_CF" > /etc/postfix/virtual_mailbox_domains.cf
+if [[ -n "$POSTFIX_VIRTUAL_MAILBOX_DOMAINS_CF" ]]; then
+  echo "Using environment variable 'POSTFIX_VIRTUAL_MAILBOX_DOMAINS_CF' as content for '/etc/postfix/virtual_mailbox_domains.cf'"
+  echo -n "$POSFIX_VIRTUAL_MAILBOX_DOMAINS_CF" > /etc/postfix/virtual_mailbox_domains.cf
+fi
+
+if [[ -n "$POSTFIX_VIRTUAL_MAILBOX_MAPS_CF" ]]; then
+  echo "Using environment variable 'POSTFIX_VIRTUAL_MAILBOX_MAPS_CF' as content for '/etc/postfix/virtual_mailbox_maps.cf'"
+  echo -n "$POSTFIX_VIRTUAL_MAILBOX_MAPS_CF" > /etc/postfix/virtual_mailbox_maps.cf
 fi
