@@ -12,6 +12,7 @@ RUN apt-get update && \
       busybox-syslogd \
       ca-certificates \
       postfix \
+      postfix-mysql \
       procps \
     && rm -rf /var/lib/apt/lists/*
 
