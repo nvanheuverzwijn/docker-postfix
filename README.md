@@ -15,6 +15,13 @@ Start a shell inside the container:
 docker exec -it pf bash
 ```
 
+## Users
+List of users created in this container
+### vmail
+uid=5000 gid=5000 groups=mail
+### postfix
+uid=101 gid=102 groups=postfix
+
 ## Environment Variable
 ### POSTFIX_CONFIG_MAIN_CF
 The content of this variable will overwrite everything in `/etc/postfix/main.cf`.
